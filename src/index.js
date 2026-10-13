@@ -11,10 +11,19 @@ import EmpleadosOficios from './components/EmpleadosOficios';
 import EmpleadosComponent from './components/maestrodetalle/EmpleadosComponent';
 import DepartamentosComponent from './components/maestrodetalle/DepartamentosComponent';
 import CocheComponent from './components/coches/CocheComponent';
+import MenuComponent from './components/MenuComponent';
+import Router from './components/Router';
+import CollatzComponent from './components/CollatzComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <CocheComponent />
+    <div style={{ margin: 'auto', width: '50%' }}>
+        <Router />
+    </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
